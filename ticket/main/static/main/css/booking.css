@@ -1,0 +1,20 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  padding: 10px;
+  background-repeat: repeat;
+  background: #EEFFBB;
+}
+
+ul#menu {
+  margin-bottom: 30px;
+  text-align: right;
+}
+
+ul#menu li {
+  display: inline-block;
+}
+
+p {
+  float:left;
+}

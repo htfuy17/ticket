@@ -1,0 +1,123 @@
+<!doctype html>
+{% load staticfiles %}
+<html>
+  <head>
+    <title>訂票系統</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+  </head>
+  <body>
+    <header>
+    {% include 'main/menu.html' %}
+    <header>
+    <h2>HeLLo售票系統</h2>
+    <hr>
+    <nav>
+      <ul>
+        <li><a class="load" href="{% url 'main:main' %}">首頁</a></li>
+        <li><a class="load" href="{% url 'main:about' %}">動畫手稿展</a></li>
+        <li><a class="load" href="{% url 'main:flower' %}">花博展覽</a></li>
+        <li><a class="load" href="{% url 'main:booking' %}">立即購票</a></li>
+      </ul>
+    </nav>
+
+    <h3>//熱門推薦//</h3>
+    <table id="top">
+      <tr>
+        <th>展覽列表</th>
+        <th>詳細資訊</th>
+        <th></th>
+      </tr>
+      <tr>
+        <td id="left"><img src="{% static 'main/img/picture1.jpg' %}" width="400"></td>
+        <td>
+          <p>展覽名稱：吉卜力動畫手稿展覽<br>
+                                       展覽期間：2019/01/19(六) ~ 2019/04/18(四)<br>
+                                       購票截止：2019/04/18(四) 17:00</p>
+        </td>
+        <td id="three"><a class="load" href="{% url 'main:booking' %}">立即購票</a></td>
+      </tr> 
+      <tr id="two">
+        <td id="left"><img src="{% static 'main/img/flower.jpeg' %}" width="400"></td>
+        <td>
+          <p>展覽名稱：2018臺中世界花卉博覽會<br>
+                                       展覽期間：2018/11/03(六) ~ 2019/04/24(三)<br>
+                                      購票截止：2019/04/24(三) 17:00</p>
+        </td>
+        <td id="three"><a class="load" href="{% url 'main:booking' %}">立即購票</a></td>
+      </tr>
+      <tr>
+        <td id="left"><img src="{% static 'main/img/bear.jpg' %}" width="400"></td>
+        <td>
+          <p>展覽名稱：卡通頻道猴塞雷！瘋狂運動會<br>
+                                       展覽期間：2018/12/15(六) ~ 2019/03/17(日)<br>
+                                      購票截止：2019/03/17(日) 17:00</p>
+        </td>
+        <td id="three"><a class="load" href="{% url 'main:booking' %}">立即購票</a></td>
+      </tr>
+      <tr id="two">
+        <td id="left"><img src="{% static 'main/img/1.jpg' %}" width="400"></td>
+        <td>
+          <p>展覽名稱：宇宙人ㄕㄓㄋ特展台南站<br>
+                                       展覽期間：2018/11/08(四) ~ 2019/01/06(日)<br>
+                                      購票截止：2019/01/06(日) 17:00</p>
+        </td>
+        <td id="three"><a class="load" href="{% url 'main:booking' %}">立即購票</a></td>
+      </tr>
+  </table>
+
+    <h3>//最新消息//</h3>
+    <table id="branch">
+      <tr>
+        <th>分類</th>
+        <th>內容</th>
+        <th>發佈時間</th>
+        <th>點閱次數</th>
+      </tr>
+      <tr>
+        <td>-動漫-</td>
+        <td><a href="http://taipeishop.com">動漫迷集合！吉卜力手稿大公開～把握限定明信片珍藏機會，動漫迷集合！吉卜力手稿大公開～...</a></td>
+        <td>2018/10/20</td>
+        <td>178</td>
+      </tr>
+      <tr>
+        <td>-市集-</td>
+        <td><a href="http://taipeishop.com">擊掌！熱血瘋狂運動會 全能趣味比賽跟著老皮阿寶拼冠軍/ 近距離接觸普普藝術的最佳時機 普...</a></td>
+        <td>2018/10/18</td>
+        <td>112</td>
+      </tr>
+      <tr>
+        <td>-優惠-</td>
+        <td><a href="http://taipeishop.com">[限期優惠]最重要的大事！九族櫻花季預售早鳥優惠開跑/奇美博物館聖誕週末市集預售83折/名...</a></td>
+        <td>2018/10/16</td>
+        <td>80</td>
+      </tr>
+      <tr>
+        <td>-交通-</td>
+        <td><a href="http://taipeishop.com">把握暖冬時光，規劃聖誕與跨年假期！賀卡/特展/旅遊/交通/電影/演唱會-這麼齊全的ibon服務...</a></td>
+        <td>2018/09/20</td>
+        <td>53</td>
+      </tr>
+      <tr>
+        <td>-電玩-</td>
+        <td><a href="http://taipeishop.com">不多說了，電玩展還需要等嗎？67折狂歡春節Gaming搶購中/都幫你想好了！逛過電玩展號就利用...</a></td>
+        <td>2018/09/18</td>
+        <td>14</td>
+      </tr>
+    </table>
+  </body>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<hr>
+<div id="wrapper">
+  <footer>
+    <p id="bottom">票務客服專線： 0800-012-456、(02)6666-6666 
+    │ ibon官網 │ 7-ELEVEN │ ibon mart ©2018 
+    Strive to achieve results. The harvest is wonderful. ​</p><br>
+      <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+  </footer>
+
+</div>
+
+</html>

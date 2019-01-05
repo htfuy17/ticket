@@ -77,9 +77,9 @@ WSGI_APPLICATION = 'ticket.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'blogdb',
-        'USER': 'blog',
-        'PASSWORD': 'blog',
+        'NAME': 'ticketdb',
+        'USER': 'ticket',
+        'PASSWORD': 'ticket',
         'HOST': 'localhost',
         'PORT': '',
     }

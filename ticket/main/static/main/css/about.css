@@ -1,0 +1,51 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  padding: 10px;
+  background-repeat: repeat;
+  background: #FFFAF0;
+}
+
+ul#menu {
+  margin-bottom: 30px;
+  text-align: right;
+}
+
+ul#menu li {
+  display: inline-block;
+}
+
+p {
+  float:left;
+}
+
+#ps1 {
+  line-height: 1.1em;
+  letter-spacing: 0.2em;
+  text-align: left; 
+  text-indent: 2em;
+}
+
+h3 {
+  text-decoration:underline;
+  color:darkred;
+}
+
+#ps2 tr,
+#ps2 td {
+  padding: 0.5em 2em;
+  width: 11em;
+  border-collapse: collapse; 
+  text-align:center;
+}
+
+#bottom {
+  border-bottom:1px solid blue;
+}
+
+#booking {
+  font-size: 18px;
+  font-color: #fff;
+  background-color: #AAAAAA;
+  width: 9em;
+}
