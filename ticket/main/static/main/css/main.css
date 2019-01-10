@@ -19,14 +19,6 @@ h3 {
   color:darkred;
 }
 
-ul#menu {
-  margin-bottom: 30px;
-  text-align: right;
-}
-
-ul#menu li {
-  display: inline-block;
-}
 
 #top {
   width: 65em;
@@ -37,7 +29,15 @@ ul#menu li {
 
 #top td {
   padding: 0.5em;
+}
 
+ul#menu {
+  margin-bottom: 30px;
+  text-align: right;
+}
+
+ul#menu li {
+  display: inline-block;
 }
 
 #top th {

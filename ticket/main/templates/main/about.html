@@ -12,6 +12,16 @@
     </header>
     <h2>吉卜力動畫手稿展</h2>
     <hr>
+    <nav>
+      <ul>
+        <li><a class="load" href="{% url 'main:main' %}">首頁</a></li>
+        <li><a class="load" href="{% url 'main:about' %}">動畫手稿展</a></li>
+        <li><a class="load" href="{% url 'main:flower' %}">花博展覽</a></li>
+        <li><a class="load" href="{% url 'main:booking' %}">立即購票</a></li>
+      </ul>
+    </nav>
+    <br>
+    <br>
     <table>
       <tr>
         <th ><img src="{% static 'main/img/picture1.jpg' %}"></th> 
