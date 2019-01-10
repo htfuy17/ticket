@@ -12,6 +12,41 @@
     </header>
     <h2>//線上訂票//</h2>
     <hr>
+    
+    
+    <table>
+        <tr>
+          <tr>{% for message in messages %}
+          <p class="{{ message.tags }}">{{ message }}</p><br>
+          {% endfor %}
+          <tr>
+        </tr>
+        <tr>
+          <td><p><a class="btn" href="{% url 'article:articleCreate' %}">我要訂票</a></p></td>
+        <tr>
+        <tr>
+          <td><P>以下是您的購票資訊：</P></td>
+        </tr>  
+        <tr>
+          <td><P>{% for article in articles.items %}</P></td>
+        </tr>
+        <tr>
+          <td><h3>{{ article.name }}</h3></td>
+        </tr>
+        <tr>
+          <td><h3>{{ article.phone }}</h3></td>
+        </tr>
+        <tr>
+          <td><h3>{{ article.title }}</h3></td>
+        </tr>
+        <tr>
+          <td><h3>{{ article.ticket }}</h3></td>
+        </tr>
+        <tr>
+          <td><h3>{{ article.number }}</h3></td>
+        </tr> 
+    </table>
+    {% endfor %} 
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>

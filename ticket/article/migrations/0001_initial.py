@@ -18,11 +18,11 @@ class Migration(migrations.Migration):
             name='Article',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(max_length=128, unique=True)),
-                ('phone', models.CharField(max_length=128, unique=True)),
-                ('title', models.CharField(max_length=128, unique=True)),
-                ('ticket', models.CharField(max_length=128, unique=True)),
-                ('number', models.CharField(max_length=128, unique=True)),
+                ('name', models.CharField(max_length=128)),
+                ('phone', models.CharField(max_length=128)),
+                ('title', models.CharField(max_length=128)),
+                ('ticket', models.CharField(max_length=128)),
+                ('number', models.CharField(max_length=128)),
             ],
         ),
     ]
