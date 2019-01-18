@@ -63,3 +63,10 @@ nav li a {                  /* 大多數的按鈕外觀在此設定 */
   border-radius: 10px;
   border: 1px solid black;  
 }
+
+#booking {
+  font-size: 18px;
+  font-color: #fff;
+  background-color: #AAAAAA;
+  width: 9em;
+}

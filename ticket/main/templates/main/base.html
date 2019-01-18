@@ -1,0 +1,17 @@
+<!doctype html>
+{% load staticfiles %}
+<html>
+<head>
+<title>訂票系統</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+{% block css %}{% endblock %}
+</head>
+<body>
+{% include 'main/menu.html' %}
+<h2>{% block heading %}{% endblock %}</h2>
+{% block content %}{% endblock %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+{% block script %}{% endblock %}
+</body>
+</html>
