@@ -5,18 +5,19 @@
     <title>訂票系統</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
-    
+    <link rel="stylesheet" href="{% static 'exhibition/css/exhibition.css' %}">
   </head>
   <body>
     {% include 'main/menu.html' %}
-    <h2>填寫以下訂票資料</h2>
+    <h2>新增展覽</h2>
     <hr>
-    <form method="post" action="{% url 'article:articleCreate' %}">
-      <div id='a'>
+    <form method="post" action="{% url 'exhibition:exhibitionCreate' %}">
+      <div>
         {% csrf_token %}
-        {{ articleForm.as_p }}
+        {{ exhibitionForm.as_p }}
         <input type="submit" value="送出">
       </div>
+      
     </form>
   </body>
 </html>

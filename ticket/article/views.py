@@ -1,10 +1,13 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages
+from django.db.models.query_utils import Q
+from django.contrib.auth.decorators import login_required
+
 
 from article.models import Article
 from article.forms import ArticleForm
 
-
+@login_required
 def article(request):
     '''
     Render the article page
@@ -13,6 +16,7 @@ def article(request):
     context = {'articles':articles}
     return render(request, 'article/article.html', context)
 
+@login_required
 def articleCreate(request):
     '''
     Create a new article instance

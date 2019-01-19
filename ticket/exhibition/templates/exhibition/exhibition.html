@@ -19,12 +19,13 @@
         <li><a class="load" href="{% url 'main:flower' %}">花博展覽</a></li>
         <li><a class="load" href="{% url 'main:booking' %}">立即購票</a></li>
       </ul>
-    </nav>   
+    </nav>
+
     <h3>//熱門推薦//</h3>
-    <table id="top">
     {% if user.is_superuser %}
-      <p><a class="btn" href="{% url 'exhibition:exhibitionCreate' %}">新增展覽</a></p><br>
+      <p><a class="btn" href="{% url 'exhibition:exhibitionCreate' %}">新增展覽</a></p>
     {% endif %}
+    <table id="top">
       <tr>
         <th>展覽列表</th>
         <th>詳細資訊</th>

@@ -12,14 +12,11 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='Article',
+            name='Exhibition',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(max_length=10, unique=True)),
-                ('phone', models.CharField(max_length=10, unique=True)),
-                ('title', models.CharField(max_length=10, unique=True)),
-                ('ticket', models.CharField(max_length=10, unique=True)),
-                ('number', models.CharField(max_length=10, unique=True)),
+                ('photo', models.CharField(max_length=10, unique=True)),
+                ('news', models.CharField(max_length=10)),
             ],
         ),
     ]

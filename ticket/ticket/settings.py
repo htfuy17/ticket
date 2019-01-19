@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'account',
     'main',
     'article',
+    'exhibition',
 ]
 
 MIDDLEWARE = [
@@ -127,3 +128,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 AUTH_USER_MODEL = 'account.User'
+
+LOGIN_URL = '/account/login/'

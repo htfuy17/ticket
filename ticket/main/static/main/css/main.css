@@ -106,3 +106,18 @@ nav li a {                  /* 大多數的按鈕外觀在此設定 */
   border-radius: 10px;
   border: 1px solid black;  
 }
+
+/* Button */
+.btn {
+  display: inline-block;
+  color: black;
+  font-size: 0.8em;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  border: thin solid gray;
+  background: linear-gradient(#f7f7f7, #dedede);
+}
+
+div #a p {
+  line-height :60px;
+}

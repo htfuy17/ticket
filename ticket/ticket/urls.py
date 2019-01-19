@@ -22,5 +22,6 @@ urlpatterns = [
     path('account/', include('account.urls', namespace='account')),
     path('article/', include('article.urls', namespace='article')),
     path('main/', include('main.urls', namespace='main')),
+    path('exhibition/', include('exhibition.urls', namespace='exhibition')),
     re_path('.*', views.main),
 ]
